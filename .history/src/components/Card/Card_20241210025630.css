@@ -1,0 +1,27 @@
+.card__container{
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+}
+
+.card__item{
+
+}
+.card__item>div{
+  width:400px;
+  height:400px;
+  overflow: hidden;
+}
+.card__item>div>img{
+  width:400px;
+  height:250px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.card__item>div>img:hover{
+  transform: scale(1.1);
+}

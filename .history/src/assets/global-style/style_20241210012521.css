@@ -1,0 +1,139 @@
+:root {
+  /* BACKGROUND COLOR */
+  --sci-bg-dark: #222222;
+  --sci-bg-white: #ffffff;
+  --sci-primary-blue: #78b3ce;
+  --sci-light-blue: #c9e6f0;
+  --sci-light-cream: #fbf8ef;
+  --sci-accent-orange: #f96e2a;
+
+  /*FONT*/
+  --sci-font-main: sans-serif;
+
+  /*COLOR TEXT*/
+  --sci-text-dark: #222222;
+  --sci-text-white: #ffffff;
+  --sci-text-orange: #f96e2a;
+
+  /*SPACING AND ROUNDED*/
+  --sci-spacing-xs: 8px;
+  --sci-spacing-s: 12px;
+  --sci-spacing-m: 16px;
+  --sci-spacing-l: 24px;
+  --sci-spacing-xl: 48px;
+
+  /*FONT SIZE*/
+  --sci-font-size-xs: 12px;
+  --sci-font-size-s: 16px;
+  --sci-font-size-m: 18px;
+  --sci-font-size-l: 22px;
+  --sci-font-size-xl: 28px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: var(--sci-font-size-xl);
+}
+p,
+button,
+li {
+  font-size: var(--sci-font-size-m);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  background: none;
+  padding: var(--sci-spacing-xs) var(--sci-spacing-s);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  opacity: 1;
+  animation: fadeInUp 0.5s ease-in;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 50%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+@media (max-width: 850px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: var(--sci-font-size-xl);
+  }
+
+  button,
+  li,
+  p {
+    font-size: var(--sci-font-size-s);
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: var(--sci-font-size-xl);
+  }
+  li,
+  button,
+  a {
+    font-size: var(--sci-font-size-s);
+  }
+  p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,18 @@
+.nav__container{
+  width:100%;
+  padding: 10px 50px;
+  background-color: var(--sci-light-cream);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap:20px;
+}
+
+.nav__content-link {
+  color: black;
+  text-decoration: none;
+}
+
+.nav__content-link.active {
+  color: red; /* Cambia a tu color preferido */
+}

@@ -1,0 +1,5 @@
+.header__container{
+  height:40svh;
+  display: flex;
+  justify-content: start;
+}
