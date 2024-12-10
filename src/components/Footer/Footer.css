@@ -7,7 +7,7 @@
   background-color: var(--sci-light-blue);
   padding: 60px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: start;
   gap: 30px;
