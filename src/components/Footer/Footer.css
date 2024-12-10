@@ -1,16 +1,24 @@
 .footer__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .footer__items {
+  width: 100%;
   background-color: var(--sci-light-blue);
+  display: flex;
+  justify-content: center;
+}
+
+.footer_content {
+  width: 100%;
   padding: 60px 20px;
   display: flex;
+  align-items: start;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: start;
-  gap: 30px;
+  gap: 60px;
 }
 
 .footer__items > div > h4 {
@@ -31,4 +39,10 @@
   width: 14px;
   height: 14px;
   margin-right: 8px;
+}
+
+@media (max-width: 840px) {
+  .footer_content {
+    justify-content: start;
+  }
 }

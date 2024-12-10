@@ -18,7 +18,7 @@ export const familiesContent = {
       description_:
         'Acción: Formulario para solicitar materiales como cemento, ladrillos, madera, etc.',
       link: '',
-      image: 'https://st4.depositphotos.com/1189140/25017/i/450/depositphotos_250176292-stock-photo-concept-of-housing-and-relocation.jpg',
+      image: '/images/PLATAFORMA_LOGISTICA.webp',
       button_text: 'Solicitar Materiales',
       span: ''
     },
@@ -29,7 +29,7 @@ export const familiesContent = {
       description_:
         'Acción: Formulario para solicitar mano de obra profesional para la reconstrucción (albañiles, carpinteros, etc.).',
       link: '',
-      image: 'https://st4.depositphotos.com/1189140/25017/i/450/depositphotos_250176292-stock-photo-concept-of-housing-and-relocation.jpg',
+      image: '/images/PROYECTO.webp',
       button_text: 'Solicitar Mano de Obra Profesional',
       span: ''
     },
@@ -40,7 +40,7 @@ export const familiesContent = {
       description_:
         'Acción: Formulario para solicitar la ayuda de arquitectos y peritos para realizar proyectos de reconstrucción.',
       link: '',
-      image: 'https://st4.depositphotos.com/1189140/25017/i/450/depositphotos_250176292-stock-photo-concept-of-housing-and-relocation.jpg',
+      image: '/images/GESTION.webp',
       button_text: 'Solicitar Proyecto',
       span: ''
     },
@@ -51,7 +51,7 @@ export const familiesContent = {
       description_:
         'Acción: Formulario para solicitar asesoramiento y gestionar las ayudas disponibles.',
       link: '',
-      image: 'https://st4.depositphotos.com/1189140/25017/i/450/depositphotos_250176292-stock-photo-concept-of-housing-and-relocation.jpg',
+      image: '/images/MATERIALES.webp',
       button_text: 'Solicitar Ayudas',
       span: ''
     },
@@ -62,7 +62,7 @@ export const familiesContent = {
       description_:
         'Acción: Solicitud de vehículos y tiempo de uso para el transporte de materiales.',
       link: '',
-      image: 'https://st4.depositphotos.com/1189140/25017/i/450/depositphotos_250176292-stock-photo-concept-of-housing-and-relocation.jpg',
+      image: '/images/DELIVERY.webp',
       button_text: 'Solicitar Transporte',
       span: ''
     }

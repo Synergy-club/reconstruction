@@ -12,21 +12,33 @@ const Footer = () => {
         ></path>
       </svg>
       <div className='footer__items'>
-        {footer?.map((element, index) => (
-          <div key={index}>
-            <h4>{element.title}</h4>
-            <ul>
-              {element.items.map((item, index) => (
-                <li key={index}>
-                  <a href={item.link} className="footer__link" target='_blank'>
-                    {item.icon && <img src={item.icon} alt={item.name} className="footer__icon" />}
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <div className='footer_content'>
+          {footer?.map((element, index) => (
+            <div key={index}>
+              <h4>{element.title}</h4>
+              <ul>
+                {element.items.map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.link}
+                      className='footer__link'
+                      target='_blank'
+                    >
+                      {item.icon && (
+                        <img
+                          src={item.icon}
+                          alt={item.name}
+                          className='footer__icon'
+                        />
+                      )}
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </footer>
   )

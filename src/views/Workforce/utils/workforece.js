@@ -20,20 +20,20 @@ export const workforceContent = {
       description_:
         'Acción: Asegura que los materiales lleguen de manera eficiente a las familias y a las obras de reconstrucción.',
       link: '',
-      image: 'https://procomo.es/es/wp-content/uploads/2023/06/fases-construccion-edificio.jpg',
+      image: '/images/GESTION.webp',
       button_text: 'Donar Materiales',
       span: ''
     },
     {
-      title: 'Coordinación de Trabajos y Oficios',
+      title: 'Centro técnico y de formación',
       description:
         'Descripción: Gestión de proyectos de obra, asignación de voluntarios y coordinación de los oficios profesionales (albañiles, carpinteros, electricistas, etc.).',
       description_:
         'Acción: Se coordina la ejecución de la obra y la asignación de mano de obra profesional.',
       link: '',
-      image: 'https://procomo.es/es/wp-content/uploads/2023/06/fases-construccion-edificio.jpg',
+      image: '/images/PLATAFORMA_LOGISTICA.webp',
       button_text: 'Donar Mano de Obra',
-      span: ''
+      span: 'Formación gratuita a los vecinos en reparaciones menores en sus viviendas.'
     },
     {
       title: 'Arquitectura, Peritaciones y Proyectos:',
@@ -42,7 +42,7 @@ export const workforceContent = {
       description_:
         'Acción: Se ofrecen servicios de arquitectura, peritaciones y elaboración de proyectos.',
       link: '',
-      image: 'https://procomo.es/es/wp-content/uploads/2023/06/fases-construccion-edificio.jpg',
+      image: '/images/PROYECTO.webp',
       button_text: 'Donar trabajos técnicos',
       span: 'Arquitectos y arquitectos técnicos, trabajadores sociales para gestión de ayudas.'
     },
@@ -53,7 +53,7 @@ export const workforceContent = {
       description_:
         'Acción: Se reciben donaciones de materiales para las obras de reconstrucción.',
       link: '',
-      image: 'https://procomo.es/es/wp-content/uploads/2023/06/fases-construccion-edificio.jpg',
+      image: '/images/MATERIALES.webp',
       button_text: 'Donar Materiales',
       span: ''
     },
@@ -64,7 +64,7 @@ export const workforceContent = {
       description_:
         'Acción: Se solicitan voluntarios para tareas de limpieza, reparación y reconstrucción de viviendas.',
       link: '',
-      image: 'https://procomo.es/es/wp-content/uploads/2023/06/fases-construccion-edificio.jpg',
+      image: '/images/LIMPIEZADEBARRO.webp',
       button_text: 'Donar Voluntariado',
       span: ''
     },
@@ -75,7 +75,7 @@ export const workforceContent = {
       description_:
         'Acción: donación de vehículos y tiempo de uso para el transporte de materiales.',
       link: '',
-      image: 'https://procomo.es/es/wp-content/uploads/2023/06/fases-construccion-edificio.jpg',
+      image: '/images/LOGISTICA.webp',
       button_text: 'Donar o compartir medios de transporte',
       span: ''
     }

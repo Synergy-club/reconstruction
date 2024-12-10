@@ -21,5 +21,12 @@ export const footer = [
       { name: 'option 1', link: '#', icon:'' },
       { name: 'option 2', link: '#', icon:'' }
     ]
+  },
+  {
+    title: 'Temas Legales',
+    items: [
+      { name: 'Politicas de privacidad', link: '#', icon:'' },
+      { name: 'option 2', link: '#', icon:'' }
+    ]
   }
 ];
