@@ -11,6 +11,7 @@ export const workforceContent = {
       content: 'Reconstrucción en Acción'
     }
   },
+  
   donationBoxes: [
     {
       title: 'Plataforma Logística',
