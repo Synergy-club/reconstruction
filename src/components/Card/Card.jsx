@@ -8,7 +8,7 @@ const Card = ({ array }) => {
         Object.keys(array).length > 0 &&
         Object.values(array).map((element, index) => (
           <div key={index} className='card__item'>
-            <div >
+            <div className='card__overflow-hidden'>
               <div className='card__content-img'>
                 <img src={element.image} alt={element.title} />
               </div>
