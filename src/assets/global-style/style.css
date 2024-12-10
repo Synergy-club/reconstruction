@@ -6,6 +6,7 @@
   --sci-light-blue: #c9e6f0;
   --sci-light-cream: #fbf8ef;
   --sci-accent-orange: #f96e2a;
+  --sci-accent-orange-opacity: #ec8b5b38;
 
   /*FONT*/
   --sci-font-main: sans-serif;
@@ -88,6 +89,12 @@ a {
   color: var(--sci-text-orange);
 }
 
+.filter {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  background-color: #fbf8ef94;
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -114,6 +121,15 @@ a {
     scale: 100%;
   }
 }
+
+.show {
+  animation-name: show;
+  view-timeline-name: --reveal;
+  animation-timeline: --reveal;
+  animation-range: 10% cover 20%;
+  animation-fill-mode: both;
+}
+
 
 @media (max-width: 400px) {
   li,

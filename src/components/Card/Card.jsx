@@ -3,7 +3,7 @@ import './Card.css'
 
 const Card = ({ array }) => {
   return (
-    <div className='card__container'>
+    <div className='card__container fadeIn'>
       {array &&
         Object.keys(array).length > 0 &&
         Object.values(array).map((element, index) => (
@@ -20,7 +20,7 @@ const Card = ({ array }) => {
                 </article>
               </div>
             </div>
-            <div className='card__content'>
+            <div className='card__content show'>
               {element.span && <span>*{element.span}</span>}
               <button className='button'>
                 <a

@@ -1,13 +1,20 @@
-import { useCallback } from 'react'
+import { useCallback } from 'react';
 
-const useScrollToRef = () => {
+const useScrollToRef = (offset = 55) => {
   const scrollToRef = useCallback((ref) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const rect = ref.current.getBoundingClientRect();
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      // Desplázate a la posición ajustada con el offset
+      window.scrollTo({
+        top: rect.top + scrollTop - offset,
+        behavior: 'smooth',
+      });
     }
-  }, [])
+  }, [offset]);
 
-  return scrollToRef
-}
+  return scrollToRef;
+};
 
-export default useScrollToRef
+export default useScrollToRef;
