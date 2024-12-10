@@ -5,6 +5,7 @@
   justify-content: start;
   align-items: center;
   gap:20px;
+  flex-wrap: wrap;
 }
 
 .nav__content-link {
@@ -14,4 +15,10 @@
 
 .nav__content-link.active {
   color: red;
+}
+
+@media (max-width: 500px) {
+  .nav__container{
+    padding: 10px;
+  }
 }

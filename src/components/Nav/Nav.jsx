@@ -7,7 +7,7 @@ const Nav = () => {
       <NavLink
         to='/'
         className={({ isActive }) =>
-          `button ${
+          `button nav__link ${
             isActive ? 'nav__content-link active' : 'nav__content-link'
           }`
         }
@@ -17,7 +17,7 @@ const Nav = () => {
       <NavLink
         to='/familias'
         className={({ isActive }) =>
-          `button ${isActive ? 'nav__content-link active' : 'nav__content-link'
+          `button nav__link ${isActive ? 'nav__content-link active' : 'nav__content-link'
           }`
         }
       >

@@ -1,9 +1,9 @@
 .card__container {
+  padding: 60px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  padding: 60px;
 }
 
 .card__item {
@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
 }
 .card__content-img{
   width: 100%;
@@ -73,5 +74,8 @@
   }
   .card__container {
     padding: 10px;
+  }
+  .card__content-img, .card__content-img img{
+    height: auto;
   }
 }

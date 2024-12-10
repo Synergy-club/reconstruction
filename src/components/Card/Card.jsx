@@ -21,6 +21,7 @@ const Card = ({ array }) => {
               </div>
             </div>
             <div className='card__content'>
+              {element.span && <span>*{element.span}</span>}
               <button className='button'>
                 <a
                   href={element.link}
@@ -30,7 +31,6 @@ const Card = ({ array }) => {
                   {element.button_text}
                 </a>
               </button>
-              {element.span && <span>*{element.span}</span>}
             </div>
           </div>
         ))}
