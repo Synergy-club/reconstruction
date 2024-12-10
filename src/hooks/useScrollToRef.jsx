@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 
-const useScrollToRef = (offset = 55) => {
+const useScrollToRef = (offset = 65) => {
   const scrollToRef = useCallback((ref) => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
