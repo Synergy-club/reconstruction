@@ -18,7 +18,10 @@ const Footer = () => {
             <ul>
               {element.items.map((item, index) => (
                 <li key={index}>
-                  <a href={item.link}>{item.name}</a>
+                  <a href={item.link} className="footer__link" target='_blank'>
+                    {item.icon && <img src={item.icon} alt={item.name} className="footer__icon" />}
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </ul>

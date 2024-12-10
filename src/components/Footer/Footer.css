@@ -18,11 +18,17 @@
   text-transform: capitalize;
 }
 
-.footer__items > div > ul > li > a{
+.footer__link {
   font-size: 16px !important;
-
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--sci-text-gray);
 }
 
-.footer__items > div > ul > li > a:hover {
-  font-weight: 400;
+.footer__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
 }
