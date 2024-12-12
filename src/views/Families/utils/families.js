@@ -23,7 +23,7 @@ export const familiesContent = {
       span: ''
     },
     {
-      title: 'Coordinación de Obras:',
+      title: 'Coordinación de Obras',
       description:
         'Descripción: Aseguramos que los proyectos de reconstrucción se lleven a cabo correctamente.',
       description_:
@@ -34,7 +34,7 @@ export const familiesContent = {
       span: ''
     },
     {
-      title: 'Arquitectura, Peritaciones y Proyectos:',
+      title: 'Arquitectura, Peritaciones y Proyectos',
       description:
         'Descripción: Acceder a servicios de arquitectos y peritos para la evaluación y diseño de proyectos de reconstrucción.',
       description_:
@@ -45,7 +45,7 @@ export const familiesContent = {
       span: ''
     },
     {
-      title: 'Tramitación de Ayudas:',
+      title: 'Tramitación de Ayudas',
       description:
         'Descripción: Las familias pueden acceder a la información sobre ayudas públicas y privadas disponibles.',
       description_:
@@ -56,7 +56,7 @@ export const familiesContent = {
       span: ''
     },
     {
-      title: 'Vehículos y Transporte:',
+      title: 'Vehículos y Transporte',
       description:
         'Descripción: Donación de vehículos con o sin conductor para transportar materiales o mano de obra a las zonas afectadas y facilitar la reconstrucción.',
       description_:
