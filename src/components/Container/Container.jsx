@@ -2,7 +2,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import Card from '../Card/Card'
 import './Container.css'
 
-const Container = ({ arrayContent }) => {
+const Container = ({ arrayContent }) => {  
   const { body, donationBoxes } = arrayContent
   return (
     <>
@@ -13,7 +13,7 @@ const Container = ({ arrayContent }) => {
             <meta name={body.helmet.name} content={body.helmet.content} />
           </Helmet>
         )}
-        <div className='container__view'>
+        <div className='container__view fadeIn'>
           <div>
             <h1>{body.title}</h1>
           </div>

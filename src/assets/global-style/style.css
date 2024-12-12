@@ -6,12 +6,14 @@
   --sci-light-blue: #c9e6f0;
   --sci-light-cream: #fbf8ef;
   --sci-accent-orange: #f96e2a;
+  --sci-accent-orange-opacity: #ec8b5b38;
 
   /*FONT*/
   --sci-font-main: sans-serif;
 
   /*COLOR TEXT*/
   --sci-text-dark: #222222;
+  --sci-text-gray: #494949;
   --sci-text-white: #ffffff;
   --sci-text-orange: #f96e2a;
 
@@ -29,6 +31,7 @@
   --sci-font-size-l: 22px;
   --sci-font-size-xl: 28px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -40,32 +43,50 @@
 html {
   scroll-behavior: smooth;
 }
-h1,
+
+h1 {
+  font-size: var(--sci-font-size-xl);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 h2,
 h3,
 h4,
 h5 {
   font-size: var(--sci-font-size-m);
+  text-transform: uppercase;
+  font-weight: 400;
 }
+
 p,
 button,
 li {
   font-size: var(--sci-font-size-s);
+  font-weight: 300;
+  color:var(--sci-text-gray)
 }
 
 ul {
   list-style-type: disc;
-  padding-left: 20px;
+  color:var(--sci-text-gray);
+  font-weight: 300;
+  list-style: none;
 }
+
+
 a {
   text-decoration: none;
+  color:var(--sci-text-gray);
+  font-weight: 300;
 }
-.button {
+
+button {
   cursor: pointer;
   background: none;
   padding: var(--sci-spacing-xs) var(--sci-spacing-s);
   border: none;
-  color:var(--sci-text-dark);
+  color: var(--sci-text-dark);
   transition: all 0.2s ease-in;
   display: flex;
   justify-content: center;
@@ -76,8 +97,22 @@ a {
 }
 
 .button:hover {
-  color:var(--sci-text-orange);
+  color: var(--sci-text-orange);
+}
 
+span{
+  font-weight: 600;
+  font-size: 12px!important;
+  background-color: var(--sci-accent-orange);
+  color: var(--sci-text-white)!important;
+  padding:5px;
+  border-radius: 5px;;
+}
+
+.filter {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  background-color: #fbf8ef94;
 }
 
 @keyframes fadeInUp {
@@ -107,9 +142,15 @@ a {
   }
 }
 
+.show {
+  animation-name: show;
+  view-timeline-name: --reveal;
+  animation-timeline: --reveal;
+  animation-range: 10% cover 20%;
+  animation-fill-mode: both;
+}
 
 @media (max-width: 400px) {
-  
   li,
   button,
   a {
@@ -117,5 +158,13 @@ a {
   }
   p {
     font-size: 14px;
+  }
+}
+
+@media (max-width:270px) {
+  h1 {
+    font-size: var(--sci-font-size-m);
+    text-transform: uppercase;
+    font-weight: 400;
   }
 }
