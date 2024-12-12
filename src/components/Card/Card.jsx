@@ -10,7 +10,12 @@ const Card = ({ array }) => {
           <div key={index} className='card__item'>
             <div className='card__overflow-hidden'>
               <div className='card__content-img'>
-                <img src={element.image} alt={element.title} />
+                <img
+                  src={element.image}
+                  alt={element.title}
+                  width='100%'
+                  height='200'
+                />
               </div>
               <div className='card__content show'>
                 <div>
@@ -23,7 +28,9 @@ const Card = ({ array }) => {
               </div>
             </div>
             <div className='card__content'>
-              {element.span && <span className='show card__span'>{element.span}</span>}
+              {element.span && (
+                <span className='show card__span'>{element.span}</span>
+              )}
               <button className='button card__content-links show'>
                 <a
                   href={element.link}
