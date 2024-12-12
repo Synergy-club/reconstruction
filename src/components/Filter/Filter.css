@@ -43,7 +43,7 @@
 .filter__target > ul{
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
   padding: 10px;
   justify-content: center;
 }
