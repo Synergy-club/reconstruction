@@ -1,12 +1,15 @@
 .nav__container {
+  position: fixed;
+  top:0;
   width: 100%;
-  padding: 10px 50px;
+  height:100svh;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
   transition: all 0.3s ease-in;
+  z-index:1999;
 }
 
 .nav__container.sticky {

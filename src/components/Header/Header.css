@@ -11,6 +11,35 @@
   position: absolute
 }
 
+.header__menu{
+  position: fixed;
+  width:40px;
+  height:40px;
+  padding:30px;
+  right:20px;
+  top:20px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.712);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.header__menu:hover{
+  transform: scale(1.1);
+}
+
+.header__menu > img{
+  width:25px;
+  height:25px;
+  display: flex;
+  object-fit: cover;
+  margin-top: 5px;
+}
+
 .header__text-hero{
   position: absolute;
   width:100%;
@@ -38,9 +67,7 @@
 }
 
 .header__nav{
-  display: flex;
-  align-items: end;
-  height:100%;
+  position: relative;
 }
 
 @media (max-width:625px) {

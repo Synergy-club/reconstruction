@@ -2,31 +2,16 @@ import { NavLink } from 'react-router-dom'
 import './Nav.css'
 import { useContext, useEffect, useState } from 'react'
 import { ReferenceContext } from '../../contexts/ReferenceContext'
+import { FunctionContext } from '../../contexts/FunctionContext'
 
 const Nav = () => {
-  const [isSticky, setIsSticky] = useState(false)
   const { refNav } = useContext(ReferenceContext)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [])
+  const {showMenu, handleShowMenu} = useContext(FunctionContext)
 
   return (
     <nav
       ref={refNav}
-      className={`nav__container fadeIn ${isSticky ? 'sticky filter' : ''}`}
+      className={`nav__container filter fadeIn`}
     >
       <NavLink
         to='/'
@@ -35,6 +20,7 @@ const Nav = () => {
             isActive ? 'nav__content-link active' : 'nav__content-link'
           }`
         }
+        onClick={() => handleShowMenu()}
       >
         Empresa y Voluntariado
       </NavLink>
@@ -45,6 +31,7 @@ const Nav = () => {
             isActive ? 'nav__content-link active' : 'nav__content-link'
           }`
         }
+        onClick={() => handleShowMenu()}
       >
         Familias
       </NavLink>
