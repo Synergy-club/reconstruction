@@ -4,6 +4,7 @@ import header from '/images/hero.webp'
 import menu from '/images/menu.png'
 import './Header.css'
 import { FunctionContext } from '../../contexts/FunctionContext'
+import Filter from '../Filter/Filter'
 
 const Header = () => {
   const {showMenu, handleShowMenu} = useContext(FunctionContext)
@@ -15,6 +16,9 @@ const Header = () => {
         <div className='header__background-black'></div>
         <h1 className='header__text-hero'>RECONSTRUCCIÓN</h1>
         <img src={header} alt='dana valencia' />
+      </div>
+      <div>
+        <Filter />
       </div>
       <div className='header__nav'>
         <div className='header__menu' onClick={handleShowMenu}>

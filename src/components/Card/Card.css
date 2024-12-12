@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-bottom: 100px;
 }
 
 .card__item {
@@ -48,6 +47,8 @@
 .card__content-links {
   display: flex;
   justify-content: ceneter;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+
 }
 
 .card__content button {
