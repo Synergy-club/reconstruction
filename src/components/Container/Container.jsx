@@ -2,7 +2,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import Card from '../Card/Card'
 import './Container.css'
 
-const Container = ({ arrayContent }) => {
+const Container = ({ arrayContent }) => {  
   const { body, donationBoxes } = arrayContent
   return (
     <>
