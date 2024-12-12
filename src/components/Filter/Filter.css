@@ -45,7 +45,7 @@
   flex-wrap: wrap;
   gap: 5px;
   padding: 10px;
-  justify-content: center;
+  justify-content: start;
 }
 .filter__target > ul > li{
   flex-shrink: 0;
