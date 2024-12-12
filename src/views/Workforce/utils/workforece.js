@@ -7,8 +7,15 @@ export const workforceContent = {
       'Esta sección está enfocada en la gestión logística y las acciones de reconstrucción en curso, mostrando lo que se está haciendo para la recuperación de la zona.',
     helmet: {
       title:'Reconstrucción Valencia',
-      name: 'description',
-      content: 'Reconstrucción en Acción'
+      description:{
+        name:'description',
+        content: 'Reconstrucción en Acción',
+      },
+      keywords:{
+        name: 'keywords',
+        content: 'palabra calve 1, palabra clave 2, etc'
+
+      }
     }
   },
   

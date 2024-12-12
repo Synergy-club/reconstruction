@@ -1,17 +1,18 @@
-import { useContext, useState } from 'react'
-import { useFilter } from '../../hooks/useFilter'
-import { familiesContent } from '../../views/Families/utils/families'
-import { workforceContent } from '../../views/Workforce/utils/workforece'
-import './Filter.css'
-import Card from '../Card/Card'
+import { useContext, useEffect, useState } from 'react'
 import { FunctionContext } from '../../contexts/FunctionContext'
 import { ReferenceContext } from '../../contexts/ReferenceContext'
+import Card from '../Card/Card'
+import './Filter.css'
+import { useLocation } from 'react-router-dom'
 
 const Filter = () => {
   const [searchCampain, setSearchCampain] = useState({})
+  const [scrollRef, setScrollRef] = useState('')
   const { searchTerm, setSearchTerm, handleSearchChange, filter } =
     useContext(FunctionContext)
-  const { useScroll, reffamilies, refFilter } = useContext(ReferenceContext)
+  const { useScroll, reffamilies, refworkforce, refFilter } =
+    useContext(ReferenceContext)
+  const location = useLocation()
 
   const handleNewCard = (item) => {
     setSearchCampain(item)
@@ -23,17 +24,20 @@ const Filter = () => {
   const handleCloseFilter = () => {
     setSearchCampain('')
     setTimeout(() => {
-      useScroll(reffamilies)
+      setScrollRef(location.pathname === '/familias' ? reffamilies : refworkforce)
     }, 300)
-  }
+  }  
 
   const handleClearInputSearch = () => {
     setSearchTerm('')
     handleCloseFilter()
-    setTimeout(() => {
-      useScroll(reffamilies)
-    }, 300)
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      useScroll(scrollRef)
+    }, 300)
+  }, [scrollRef])
 
   return (
     <div>
@@ -52,7 +56,11 @@ const Filter = () => {
           </div>
           <div className='filter__target'>
             <p>Busqueda por campaña:</p>
-            {filter.length <= 0 && <p className='filter__not-exist'>No hay resultados de busqueda.</p>}
+            {filter.length <= 0 && (
+              <p className='filter__not-exist'>
+                No hay resultados de busqueda.
+              </p>
+            )}
             <ul>
               {filter.map((item, index) => (
                 <li key={index} onClick={() => handleNewCard(item)}>
@@ -60,12 +68,14 @@ const Filter = () => {
                 </li>
               ))}
             </ul>
+            <p className='filter__Result-content'>
+              Resultados de busqueda: <span>{Object.keys(filter).length}</span>
+            </p>
           </div>
         </div>
       </div>
-      {Object.keys(searchCampain).length > 0 && (
+      {searchCampain && Object.keys(searchCampain).length > 0 && (
         <div className='filter__result'>
-          <p>Resultados de busqueda:</p>
           <div ref={refFilter}>
             <Card array={{ searchCampain }} />
             <button onClick={handleCloseFilter}>Cerrar</button>

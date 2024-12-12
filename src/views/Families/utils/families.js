@@ -5,9 +5,15 @@ export const familiesContent = {
     description_:
       'Esta sección está orientado a ofrecer servicios directos a las familias afectadas, enfocándose en ayudarles con las necesidades inmediatas para reconstruir sus hogares.',
     helmet: {
-      title:'Familias Acción Inmediata',
-      name: 'description',
-      content: 'Familias, Acción Inmediata'
+      title: 'Familias Acción Inmediata',
+      description: {
+        name: 'description',
+        content: 'Familias, Acción Inmediata'
+      },
+      keywords: {
+        name: 'keywords',
+        content: 'FAMILIA palabra calve 1, palabra clave 2, etc'
+      }
     }
   },
   donationBoxes: [

@@ -10,7 +10,8 @@ const Container = ({ arrayContent }) => {
         {body?.helmet && (
           <Helmet>
             <title>{body.helmet.title}</title>
-            <meta name={body.helmet.name} content={body.helmet.content} />
+            <meta name={body.helmet.description.name} content={body.helmet.description.content} />
+            <meta name={body.helmet.keywords.name} content={body.helmet.keywords.content} />
           </Helmet>
         )}
         <div className='container__view fadeIn'>
