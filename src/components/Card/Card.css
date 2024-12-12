@@ -8,7 +8,7 @@
 }
 
 .card__item {
-  background-color: #fff;
+  background-color: #e9e9e9;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: calc(33.33% - 20px);
@@ -56,6 +56,10 @@
   background-color: var(--sci-light-blue);
   border-radius: 4px;
   width: 100%;
+}
+
+.card__span{
+  cursor: help;
 }
 
 .card__content button > a{

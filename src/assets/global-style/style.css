@@ -1,11 +1,11 @@
 :root {
   /* BACKGROUND COLOR */
   --sci-bg-dark: #222222;
-  --sci-bg-white: #ffffff;
-  --sci-primary-blue: #78b3ce;
-  --sci-light-blue: #c9e6f0;
+  --sci-bg-white: rgb(221, 215, 206);
+  --sci-primary-blue: rgb(185, 182, 176);
+  --sci-light-blue: rgb(208, 201, 190);
   --sci-light-cream: #fbf8ef;
-  --sci-accent-orange: #f96e2a;
+  --sci-accent-orange: #f9532a;
   --sci-accent-orange-opacity: #ec8b5b38;
 
   /*FONT*/
@@ -42,6 +42,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--sci-bg-white);
 }
 
 h1 {
@@ -64,13 +65,13 @@ button,
 li {
   font-size: var(--sci-font-size-s);
   font-weight: 300;
-  color:var(--sci-text-gray)
+  color:var(--sci-text-gray);
+  font-weight: 400;
 }
 
 ul {
   list-style-type: disc;
   color:var(--sci-text-gray);
-  font-weight: 300;
   list-style: none;
 }
 
@@ -78,7 +79,7 @@ ul {
 a {
   text-decoration: none;
   color:var(--sci-text-gray);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 button {

@@ -4,13 +4,9 @@ import { footer } from './utils/footer'
 const Footer = () => {
   return (
     <footer className='footer__container'>
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
-        <path
-          fill='#c9e6f0'
-          fillOpacity='1'
-          d='M0,192L120,202.7C240,213,480,235,720,208C960,181,1200,107,1320,69.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z'
-        ></path>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="rgb(208, 201, 190)" fillOpacity="1" d="M0,128L120,138.7C240,149,480,171,720,186.7C960,203,1200,213,1320,218.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+</svg>
       <div className='footer__items'>
         <div className='footer_content'>
           {footer?.map((element, index) => (

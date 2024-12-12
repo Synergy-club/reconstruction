@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo } from 'react'
+import { useContext, useEffect } from 'react'
 import Container from '../../components/Container/Container'
 import { ReferenceContext } from '../../contexts/ReferenceContext'
 import { familiesContent } from './utils/families'
@@ -6,8 +6,6 @@ import './Families.css'
 
 const Families = () => {
   const {useScroll, reffamilies} = useContext(ReferenceContext)
-  const memoizedContent = useMemo(() => familiesContent, [familiesContent])
-
   useEffect(() => {
     setTimeout(() => {
       useScroll(reffamilies)
@@ -16,7 +14,7 @@ const Families = () => {
   return (
     <section ref={reffamilies} className='families__container'>
       <div>
-        <Container arrayContent={memoizedContent} />
+        <Container arrayContent={familiesContent} />
       </div>
     </section>
   )

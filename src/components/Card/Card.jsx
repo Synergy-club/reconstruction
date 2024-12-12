@@ -23,7 +23,7 @@ const Card = ({ array }) => {
               </div>
             </div>
             <div className='card__content'>
-              {element.span && <span className='show'>{element.span}</span>}
+              {element.span && <span className='show card__span'>{element.span}</span>}
               <button className='button card__content-links show'>
                 <a
                   href={element.link}
